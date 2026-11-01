@@ -13,7 +13,6 @@ def list_notes():
 
 
 @bp.get("/admin/export")
-@login_required
 def export_all():
     if not is_admin(g.user):
         return jsonify(error="forbidden"), 403
