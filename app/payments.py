@@ -9,6 +9,7 @@ def charge(customer_id: str, cents: int) -> dict:
         json={"customer": customer_id, "amount": cents},
         headers={"Authorization": f"Bearer {Settings.PAYMENTS_TOKEN}"},
         timeout=10,
+        verify=False,
     )
     resp.raise_for_status()
     return resp.json()
